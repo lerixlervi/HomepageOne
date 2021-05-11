@@ -1,0 +1,25 @@
+<canvas heigt ='300' width = '500' id= 'canva'> </canvas>
+
+<script>
+  var canvasTag =  document.getElementById('canva')
+  var context = canvasTag.getContext('2d')
+  var counter = 0
+
+
+ while (counter < 400) {
+
+    var x = Math.random()*500
+    var y = Math.random()*300
+
+    var colorRand1 = Math.random()*255
+    var colorRand2 = Math.random()*255
+    var colorRand3 = Math.random()*255
+
+
+    context.fillStyle = 'rgb('+colorRand1+','+colorRand2+','+colorRand3+')'
+    context.fillRect(x,y,20,20)
+     counter = counter + 1
+ 
+ }
+
+</script>
